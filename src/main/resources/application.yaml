@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: '12345'
+  jpa:
+    generate-ddl: 'true'
+    hibernate:
+      ddl-auto: update
+  application:
+    name: PracticeProject
+  mustache:
+    servlet:
+      expose-request-attributes: 'true'
+  main:
+    allow-circular-references: true
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcyMDAwMjAzNSwiaWF0IjoxNzIwMDAyMDM1fQvmGd2pImMwueWAy2sxNbckJ2Qki7u6L2aAde72nj8
+  lifetime: 30m
